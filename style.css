@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #c4cb96;
+    background-image: linear-gradient(to right, #c4cb96 33%, #ffffff 77%);
+    font-family: "Agdasima", sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+input{}
+
+.card{
+    background-color: #d2d8a2a2;
+        background-image: linear-gradient(to right, #b0bda1, #d4dbb6, #ffffff);
+}
