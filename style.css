@@ -1,24 +1,99 @@
-@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap");
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #c4cb96;
-    background-image: linear-gradient(to right, #c4cb96 33%, #ffffff 77%);
-    font-family: "Agdasima", sans-serif;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    flex-direction: column;
+  background-color: #c4cb96;
+  background-image: linear-gradient(to right, #c4cb96 33%, #ffffff 77%);
+  font-family: "Agdasima", sans-serif;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
-input{}
-
-.card{
+input {
     background-color: #d2d8a2a2;
-        background-image: linear-gradient(to right, #b0bda1, #d4dbb6, #ffffff);
+    border-radius: 10px;
+    padding: 1rem;
+    color: #333;
+    border: none;
+    font-family: inherit;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+input::placeholder{
+    color: #666;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(51, 51, 51, 0.3);
+}
+
+.card {
+  background-color: #d2d8a2a2;
+  background-image: linear-gradient(0.25turn, #b0bda1 0%, #d4dbb6 100%);
+  display: flex;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+}
+
+.img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 10px solid #c4cb96;
+}
+
+.user-info {
+  margin-left: 2rem;
+  color: #333;
+}
+
+.user-info h2 {
+  margin-top: 0;
+}
+
+.user-info ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  max-width: 400px;
+  list-style-type: none;
+}
+
+.user-info ul li{
+display: flex;
+align-items: center;
+}
+
+.user-info ul li strong{
+    font-size: 0.9rem;
+margin-left: 0.5rem;
+}
+
+.repo{
+    background-color: #c4cb96;
+    color: #333;
+    font-size: 0.7rem;
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+    border-radius: 5px;
 }
